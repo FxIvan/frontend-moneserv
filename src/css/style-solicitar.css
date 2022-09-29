@@ -1,0 +1,55 @@
+@media only screen and (max-width: 700px) {
+
+    /*Color del fondo*/
+    body{
+        background-color: #f3d2c1;
+    }
+
+    /*Input General*/
+    .input-label-container{
+        color: #001858;
+    }
+
+    .input-label-container label{
+        margin: 15px 0 5px 0;
+        font-weight: bold;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .input-label-container input{
+        background-color: #fef6e4;
+        border: 2px solid #ff8906;
+        border-radius: 4px;
+    }
+
+    .input-label-container-option label{
+        margin: 15px 0 5px 0;
+        color: #001858;
+        font-weight: bold;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .input-label-container-option select, .input-label-container select option{
+        background-color: #fef6e4;
+        border: 2px solid #ff8906;
+        border-radius: 4px;
+    }
+
+    .container-total-producto{
+        border-bottom: 5px solid white;
+        width: 80%;
+    }
+
+    .container-total-producto h3{
+        font-size: 18px;
+    }
+
+    .button-solicitar{
+        text-align: center;
+        margin: 10px 0 20px 0;
+    }
+
+    .container-total{
+        width: 80%;
+    }
+}

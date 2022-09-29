@@ -1,0 +1,101 @@
+*{
+    background-color: #f3d2c1;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+     *{
+        background-color:  #f3d2c1;
+        box-sizing: border-box;
+    }
+
+    .slc-amount-mbl input{
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 4px;
+    }
+
+    .slc-amount-mbl input:focus{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .form-control-plaintext{
+        color: aliceblue;
+        font-weight: bold;
+    }
+
+    label{
+        font-size: 12px;
+    }
+
+    .container-mobile{
+        margin: auto;
+    }
+
+    .form-check{
+        width: 120px;
+    }
+
+    .colmobile-1 , .colmobile-2{
+        padding: 1rem;
+    }
+
+    .date-mobile input{
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+
+    .date-mobile input:focus{
+        background-color: rgb(54, 54, 54);
+    }
+
+    .date-mobile .form-control{
+        color: aliceblue;
+        font-weight: bold;
+    }
+
+    .slc-method-mbl{
+        display: flex;
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+
+    .slc-method-mbl label{
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    .container-label-mb1 , .container-label-mb2{
+        display: grid;
+        width: 50%;
+        padding-left: 6vh;
+    }
+
+    .container-verificacion-mb{
+        width: 20%;
+    }
+    
+    .tarifa-mobile input{
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+
+    .tarifa-mobile input:focus{
+        background-color: rgb(54, 54, 54);
+        color: white;
+    }
+
+    .button-guardar-mobile input{
+        background-color: rgb(23, 138, 23);
+        border-radius: 4px;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+
+}
