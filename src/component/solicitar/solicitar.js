@@ -5,48 +5,83 @@ export const Solicitar = () => {
 
     const [ stateForm , setForm ] = useState({
         frm_telefono:'',
+        frm_email:'',
         frm_nombreyapellido:'',
         frm_direccion:'',
         frm_altura:'',
-        frm_provincia:'',
+        frm_piso:'',
+        frm_departamento:'',
+        frm_provincia:'Buenos Aires',
         frm_billetera:'',
         frm_cantidad:'',
         frm_ciudad_option:''
     })
 
-    const [servicio , setServicio] = useState('0')
+    const [ servicio , setServicio] = useState('0')
     const [ inputLleno , setInputLleno] = useState(false)
+    const [ inputTel , setInputTel ] = useState(false)
+    const [ inputDireccion , setDireccion ] = useState(false)
+    const [ inputAltura , setAltura ] = useState(false)
 
     const handleChange = (e) => {
 
-        const nameCiudad = e.target.value
-        const namePrueba = e.target.name
+        const nameValue = e.target.value
+        const stateName = e.target.name
 
-        console.log(namePrueba)
+        if(stateName){
+            if(stateName === 'frm_telefono'){
 
-        console.log(nameCiudad)
+                if(nameValue.length > 9){
+                    setInputTel(true)
+                }else{
+                    setInputTel(false)
+                }
+            }  
 
-        if(namePrueba === 'frm_ciudad_option'){
-            switch(nameCiudad){
+            if(stateName === 'frm_nombreyapellido'){
+                if(nameValue.length > 5){
+                      setInputLleno(true)
+    
+                }else{
+                    setInputLleno(false)
+                } 
+            } 
+
+            if(stateName === 'frm_direccion'){
+                if(nameValue.length >= 1){
+                    setDireccion(true)
+                }else{
+                    setDireccion(false)
+                }
+            }
+
+            if(stateName === 'frm_altura'){
+                if(nameValue.length >=1){
+                    setAltura(true)
+                }else{
+                    setAltura(false)
+                }
+            }
+        }
+
+        console.log( "Name: " , stateName  + "Valor: ",nameValue)
+
+        setForm({
+            ...stateForm,
+            [e.target.name]:e.target.value
+        })
+
+                
+        if(stateName === 'frm_ciudad_option'){
+            switch(nameValue){
+                case 'frm_avellaneda':
+                    return setServicio('600')
                 case 'frm_quilmes':
                     return setServicio('450')
                 case 'frm_berazategui':
                     return setServicio('550')
             }
         }
-
-        if(namePrueba === 'frm_nombreyapellido'){
-            if(nameCiudad.length > 5){
-                  setInputLleno(true)
-            }else{
-                setInputLleno(false)
-            }
-        }
-
-        setForm({
-            ...stateForm,
-            [e.target.name]:e.target.value
-        })
     }
 
 
@@ -68,16 +103,30 @@ export const Solicitar = () => {
                                 <input
                                     className='col-xs-12'
                                     type='text'
-                                    placeholder=''
+                                    placeholder='Ejemplo: 1136887781'
                                     onChange={handleChange}
-                                    name='frm_telefono'/>
+                                    name='frm_telefono'
+                                    />
+                                    <p className='m-0'>{inputTel ? <p className='d-none'></p>:<p className='m-0'>debe ingresar el numero de telefono</p>}</p>
                             </div>
+
+                            <div className='row container m-auto input-label-container'>
+                                <label className='col-xs-12 p-0'>Email:</label>
+                                <input
+                                    className='col-xs-12'
+                                    type='email'
+                                    placeholder='example@gmail.com'
+                                    onChange={handleChange}
+                                    name='frm_email'
+                                    />
+                            </div>
+
                             <div className='row container m-auto input-label-container'>
                                 <label className='col-xs-12 p-0'>Nombre y Apellido</label>
                                 <input
                                     className='col-xs-12'
                                     type='text'
-                                    placeholder=''
+                                    placeholder='Tu Nombre y Apellido'
                                     onChange={handleChange}
                                     name='frm_nombreyapellido'
                                     />
@@ -88,19 +137,43 @@ export const Solicitar = () => {
                                 <input
                                     className='col-xs-12'
                                     type='text'
-                                    placeholder=''
+                                    placeholder='Ejemplo: Esquel'
                                     onChange={handleChange}
                                     name='frm_direccion'/>
+                                    <p className='m-0'>{inputDireccion ? <p className='d-none'></p>:<p className='m-0'>debe ingresar este campo</p>}</p>
                             </div>
                             <div className='row container m-auto input-label-container'>
                                 <label className='col-xs-12 p-0'>Altura</label>
                                 <input
                                     className='col-xs-12'
                                     type='text'
-                                    placeholder=''
+                                    placeholder='Ejemplo: 189'
                                     onChange={handleChange}
                                     name='frm_altura'/>
+                                    <p className='m-0'>{inputAltura ? <p className='d-none'></p>:<p className='m-0'>debe ingresar este campo</p>}</p>
                             </div>
+
+                            <div className='row container m-auto input-label-container'>
+                                <label className='col-xs-12 p-0'>Piso</label>
+                                <input
+                                    className='col-xs-12'
+                                    type='text'
+                                    placeholder=''
+                                    onChange={handleChange}
+                                    name='frm_piso'/>
+                            </div>
+
+                            <div className='row container m-auto input-label-container'>
+                                <label className='col-xs-12 p-0'>Departamento</label>
+                                <input
+                                    className='col-xs-12'
+                                    type='text'
+                                    placeholder=''
+                                    onChange={handleChange}
+                                    name='frm_departamento'
+                                    />
+                            </div>
+
                             <div className='row container m-auto input-label-container'>
                                 <label className='col-xs-12 p-0'>Provincia</label>
                                 <input
@@ -108,12 +181,16 @@ export const Solicitar = () => {
                                     type='text'
                                     placeholder='Buenos Aires'
                                     onChange={handleChange}
-                                    name='frm_provincia'/>
+                                    name='frm_provincia'
+                                    value='Buenos Aires'
+                                    disabled
+                                    />
                             </div>
                             <div className='row container m-auto input-label-container-option'>
                        
                                 <label className='p-0'>Ciudad</label>
-                                <select id="mySelect" name='frm_ciudad_option' onChange={handleChange} >
+                                <select  name='frm_ciudad_option' onChange={handleChange} >
+                                    <option value='frm_avellaneda'>Avellaneda</option>
                                     <option value="frm_quilmes">Quilmes</option>
                                     <option value="frm_berazategui">Berazategui</option>
                                 </select>
@@ -122,9 +199,10 @@ export const Solicitar = () => {
                             <div className='row container m-auto input-label-container-option'>
                          
                                 <label className='p-0'>Billetera Virtual</label>
-                                <select id="mySelect" name='frm_billetera' onChange={handleChange}>
+                                <select  name='frm_billetera' onChange={handleChange}>
+                                    <option value='frm_no_selecciono' select='true'>Seleccione Billetera Virtual</option>
                                     <option value="frm_mercado_pago">Mercado Pago</option>
-                                    <option value="frm_berazategui">Uala</option>
+                                    <option value="frm_uala">Uala</option>
                                     <option value="frm_lemoncash">Lemon Cash</option>
                                     <option value="frm_cvu">CVU</option>
                                 </select>
@@ -135,9 +213,11 @@ export const Solicitar = () => {
                                 <input
                                     className='col-xs-12'
                                     type='number'
-                                    placeholder=''
+                                    placeholder='Cantidad Maxima: 5.000$'
                                     onChange={handleChange}
-                                    name='frm_cantidad'/>
+                                    name='frm_cantidad'
+                                    max='5000'
+                                    />
                             </div>
                         </div>
                     </div>
@@ -148,7 +228,7 @@ export const Solicitar = () => {
                                 <h3>Monto Solicitado</h3>
                             </div>
                             <div className='w-50'>
-                                <p>$ 3000</p>
+                                <p>$ {stateForm.frm_cantidad}</p>
                             </div>
                         </div>
                         <div className='row'>
@@ -163,12 +243,12 @@ export const Solicitar = () => {
                     <div className='container text-end'>
                         <div className='row m-auto container-total'>
                             <p className='w-50 text-center'>Total :</p>
-                            <span className='w-50 text-center'>$ 3450</span>
+                            <span className='w-50 text-center'>$ { Number(stateForm.frm_cantidad) + Number(servicio)}</span>
                         </div>
                     </div>
                     <div className='container'>
                         <div className='button-solicitar'>
-                            <input type='submit' value='SOLICITAR' className="btn btn-success"/>
+                           <>{ inputLleno && inputTel && inputDireccion && inputAltura ?  <input type='submit' value='SOLICITAR' className="btn btn-success"/>:<input type='submit' value='SOLICITAR' className="btn btn-success" disabled/>}</>
                         </div>
                     </div>
                 </form>
