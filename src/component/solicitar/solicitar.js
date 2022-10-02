@@ -123,7 +123,7 @@ export const Solicitar = () => {
                     <div>
                         <div>
                             <div className='row container m-auto input-label-container'>
-                                <label className='col-xs-12 p-0'>Telefono(Whatsapp)-</label>
+                                <label className='col-xs-12 p-0'>Telefono(Whatsapp)</label>
                                 <input
                                     className='col-xs-12'
                                     type='number'
