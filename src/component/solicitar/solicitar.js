@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import '../../css/style-solicitar.css'
+import { GrStatusGood } from 'react-icons/gr';
 
 export const Solicitar = () => {
 
@@ -23,6 +25,9 @@ export const Solicitar = () => {
     const [ inputDireccion , setDireccion ] = useState(false)
     const [ inputAltura , setAltura ] = useState(false)
 
+    const [ statusHTTP , setStatusHTTP ] = useState(false)
+    const [ status40x , setStatus40x ] = useState(false)
+
     const handleChange = (e) => {
 
         const nameValue = e.target.value
@@ -40,10 +45,9 @@ export const Solicitar = () => {
 
             if(stateName === 'frm_nombreyapellido'){
                 if(nameValue.length > 5){
-                      setInputLleno(true)
-    
+                    setInputLleno(true)
                 }else{
-                    setInputLleno(false)
+                    setInputLleno(true)
                 } 
             } 
 
@@ -64,14 +68,11 @@ export const Solicitar = () => {
             }
         }
 
-        console.log( "Name: " , stateName  + "Valor: ",nameValue)
-
         setForm({
             ...stateForm,
-            [e.target.name]:e.target.value
+            [stateName]:nameValue
         })
 
-                
         if(stateName === 'frm_ciudad_option'){
             switch(nameValue){
                 case 'frm_avellaneda':
@@ -85,16 +86,39 @@ export const Solicitar = () => {
     }
 
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = async(e) =>{
         e.preventDefault()
-
         console.log(stateForm)
+    
+        await axios.post('http://localhost:8000/sendingdata/client', stateForm)
+        .then(status=>{
+            if(status.status === 200){
+                setStatusHTTP(true)
+            }else{
+                setStatusHTTP(false)
+            }
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+        
     }
 
 
     return (
         <div>
             <div>
+                <div>{statusHTTP ?  
+                <div>
+                    <div>
+                        <div>
+                            <div className='container-status-mb'>
+                                <h2>SOLICITUD ENVIADA</h2>
+                            </div>   
+                        </div>
+                    </div>
+                </div>    
+                :
                 <form onSubmit={handleSubmit}>
                     <div>
                         <div>
@@ -102,7 +126,7 @@ export const Solicitar = () => {
                                 <label className='col-xs-12 p-0'>Telefono(Whatsapp)</label>
                                 <input
                                     className='col-xs-12'
-                                    type='text'
+                                    type='number'
                                     placeholder='Ejemplo: 1136887781'
                                     onChange={handleChange}
                                     name='frm_telefono'
@@ -114,7 +138,7 @@ export const Solicitar = () => {
                                 <label className='col-xs-12 p-0'>Email:</label>
                                 <input
                                     className='col-xs-12'
-                                    type='email'
+                                    type='text'
                                     placeholder='example@gmail.com'
                                     onChange={handleChange}
                                     name='frm_email'
@@ -252,6 +276,7 @@ export const Solicitar = () => {
                         </div>
                     </div>
                 </form>
+                }</div>
             </div>
         </div>
     )

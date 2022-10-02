@@ -52,4 +52,18 @@
     .container-total{
         width: 80%;
     }
+
+    /*********************DESIGN STATUS********************/
+    /******************************************************/
+
+    .container-status-mb{
+        margin-top: 15vh;
+        align-items: center;
+    }
+
+    .container-status-mb h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 1000;
+        text-align: center;
+    }
 }
