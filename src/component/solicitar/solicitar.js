@@ -87,7 +87,7 @@ export const Solicitar = () => {
 
 
     const handleSubmit = async(e) =>{
-        
+        e.preventDefault()
         console.log(stateForm)
     
         await axios.post('http://localhost:8000/sendingdata/client', stateForm)
