@@ -90,7 +90,7 @@ export const Solicitar = () => {
         e.preventDefault()
         console.log(stateForm)
     
-        await axios.post('http://159.223.96.104:443/sendingdata/client', stateForm)
+        await axios.post('https://devalmendra.online/sendingdata/client', stateForm)
         .then(status=>{
             if(status.status === 200){
                 setStatusHTTP(true)
