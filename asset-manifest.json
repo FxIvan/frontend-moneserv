@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/frontend-moneserv/static/css/main.ded64017.css",
-    "main.js": "/frontend-moneserv/static/js/main.28ded2ed.js",
+    "main.js": "/frontend-moneserv/static/js/main.f51f78d7.js",
     "static/js/787.cda612ba.chunk.js": "/frontend-moneserv/static/js/787.cda612ba.chunk.js",
     "index.html": "/frontend-moneserv/index.html",
     "main.ded64017.css.map": "/frontend-moneserv/static/css/main.ded64017.css.map",
-    "main.28ded2ed.js.map": "/frontend-moneserv/static/js/main.28ded2ed.js.map",
+    "main.f51f78d7.js.map": "/frontend-moneserv/static/js/main.f51f78d7.js.map",
     "787.cda612ba.chunk.js.map": "/frontend-moneserv/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ded64017.css",
-    "static/js/main.28ded2ed.js"
+    "static/js/main.f51f78d7.js"
   ]
 }
