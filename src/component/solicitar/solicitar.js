@@ -25,6 +25,7 @@ export const Solicitar = () => {
     const [ inputTel , setInputTel ] = useState(false)
     const [ inputDireccion , setDireccion ] = useState(false)
     const [ inputAltura , setAltura ] = useState(false)
+    const [ selecCity , setSelectCity ] = useState(true)
 
     const [ statusHTTP , setStatusHTTP ] = useState(false)
     const [ status40x , setStatus40x ] = useState(false)
@@ -48,7 +49,7 @@ export const Solicitar = () => {
                 if(nameValue.length > 5){
                     setInputLleno(true)
                 }else{
-                    setInputLleno(true)
+                    setInputLleno(false)
                 } 
             } 
 
@@ -66,6 +67,16 @@ export const Solicitar = () => {
                 }else{
                     setAltura(false)
                 }
+            }
+
+            if(stateName === "frm_ciudad_option"){
+                if(nameValue === 'frm_ciudad' || nameValue === ''){
+                    setSelectCity(true)
+                }else{
+                    setSelectCity(false)
+                }
+            }else{
+                setSelectCity(true)
             }
         }
 
@@ -227,10 +238,12 @@ export const Solicitar = () => {
                        
                                 <label className='p-0'>Ciudad</label>
                                 <select  name='frm_ciudad_option' onChange={handleChange} >
+                                    <option value='frm_ciudad' default>Seleccionar Ciudad</option>
                                     <option value='frm_avellaneda'>Avellaneda</option>
                                     <option value="frm_quilmes">Quilmes</option>
                                     <option value="frm_berazategui">Berazategui</option>
                                 </select>
+                                <p className='m-0'>{selecCity ? <p>debe selecionar ciudad</p>:<p className='d-none'></p>}</p>
                            
                             </div>
                             <div className='row container m-auto input-label-container-option'>
@@ -285,7 +298,7 @@ export const Solicitar = () => {
                     </div>
                     <div className='container'>
                         <div className='button-solicitar'>
-                           <>{ inputLleno && inputTel && inputDireccion && inputAltura ?  <input type='submit' value='SOLICITAR' className="btn btn-success"/>:<input type='submit' value='SOLICITAR' className="btn btn-success" disabled/>}</>
+                           <>{ inputLleno && inputTel && inputDireccion && inputAltura && !selecCity ?  <input type='submit' value='SOLICITAR' className="btn btn-success"/>:<input type='submit' value='SOLICITAR' className="btn btn-success" disabled/>}</>
                         </div>
                     </div>
                 </form>
