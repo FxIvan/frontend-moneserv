@@ -1,9 +1,6 @@
 @media only screen and (max-width: 700px) {
 
     /*Color del fondo*/
-    body{
-        background-color: #f3d2c1;
-    }
 
     /*Input General*/
     .input-label-container{

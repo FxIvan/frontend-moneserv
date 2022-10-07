@@ -1,12 +1,6 @@
-*{
-    background-color: #f3d2c1;
-    box-sizing: border-box;
-}
-
 @media only screen and (max-width: 700px) {
-     *{
-        background-color:  #f3d2c1;
-        box-sizing: border-box;
+     body{
+        background-color: #060749;
     }
 
     .slc-amount-mbl input{
