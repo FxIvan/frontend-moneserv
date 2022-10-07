@@ -4,7 +4,7 @@
 
     /*Input General*/
     .input-label-container{
-        color: #001858;
+        color: #f8f8f8;
     }
 
     .input-label-container label{
@@ -21,7 +21,7 @@
 
     .input-label-container-option label{
         margin: 15px 0 5px 0;
-        color: #001858;
+        color: #f8f8f8;
         font-weight: bold;
         font-family: 'Secular One', sans-serif;
     }
@@ -64,9 +64,6 @@
         text-align: center;
     }
 
-
-
-
     .container-text-volver p{
         margin-top: 2rem;
         font-size: 14px;
@@ -80,11 +77,15 @@
     .button-ir{
         text-align: center;
         padding: 0.8rem;
-        background-color: #001858;
+        background-color: #f8f8f8;
         border-radius: 0.5rem;
         color: azure;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    p, h3, h2, span{
+        color: #f8f8f8;
     }
 
     #icon-check{
