@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import '../../css/style-solicitar.css'
-import { GrStatusGood } from 'react-icons/gr';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
+import {Link} from 'react-router-dom'
 
 export const Solicitar = () => {
 
@@ -114,7 +115,19 @@ export const Solicitar = () => {
                         <div>
                             <div className='container-status-mb'>
                                 <h2>SOLICITUD ENVIADA</h2>
-                            </div>   
+                                <h2>CORRECTAMENTE</h2>
+                                <div className='text-center'>
+                                    <AiOutlineCheckCircle id='icon-check'/>
+                                </div>    
+                            </div>      
+                            <div className='container container-text-volver'>
+                                <div>
+                                    <p>En las proxima horas no estaremos contactando contigo via Whatsapp</p>
+                                </div>   
+                                <div className='text-center container-buton-ir'>
+                                    <Link to='/' className='button-ir'>Ir a Pagina principal</Link>
+                                </div>   
+                            </div>
                         </div>
                     </div>
                 </div>    
