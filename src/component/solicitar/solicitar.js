@@ -154,6 +154,7 @@ export const Solicitar = () => {
                                     placeholder='Ejemplo: 1136887781'
                                     onChange={handleChange}
                                     name='frm_telefono'
+                                    autoComplete='disabled'
                                     />
                                     <p className='m-0'>{inputTel ? <p className='d-none'></p>:<p className='m-0'>debe ingresar el numero de telefono</p>}</p>
                             </div>
@@ -166,6 +167,7 @@ export const Solicitar = () => {
                                     placeholder='example@gmail.com'
                                     onChange={handleChange}
                                     name='frm_email'
+                                    autoComplete='disabled'
                                     />
                             </div>
 
@@ -177,6 +179,7 @@ export const Solicitar = () => {
                                     placeholder='Tu Nombre y Apellido'
                                     onChange={handleChange}
                                     name='frm_nombreyapellido'
+                                    autoComplete='disabled'
                                     />
                                 <p className='m-0'>{inputLleno ? <p className='d-none'></p>:<p className='m-0'>debe ingresar este campo</p>}</p>
                             </div>
@@ -187,7 +190,9 @@ export const Solicitar = () => {
                                     type='text'
                                     placeholder='Ejemplo: Esquel'
                                     onChange={handleChange}
-                                    name='frm_direccion'/>
+                                    name='frm_direccion'
+                                    autoComplete='disabled'
+                                    />
                                     <p className='m-0'>{inputDireccion ? <p className='d-none'></p>:<p className='m-0'>debe ingresar este campo</p>}</p>
                             </div>
                             <div className='row container m-auto input-label-container'>
@@ -197,7 +202,9 @@ export const Solicitar = () => {
                                     type='text'
                                     placeholder='Ejemplo: 189'
                                     onChange={handleChange}
-                                    name='frm_altura'/>
+                                    name='frm_altura'
+                                    autoComplete='disabled'
+                                    />
                                     <p className='m-0'>{inputAltura ? <p className='d-none'></p>:<p className='m-0'>debe ingresar este campo</p>}</p>
                             </div>
 
@@ -237,7 +244,7 @@ export const Solicitar = () => {
                             <div className='row container m-auto input-label-container-option'>
                        
                                 <label className='p-0'>Ciudad</label>
-                                <select  name='frm_ciudad_option' onChange={handleChange} >
+                                <select  name='frm_ciudad_option' onChange={handleChange} autoComplete='disabled'>
                                     <option value='frm_ciudad' default>Seleccionar Ciudad</option>
                                     <option value='frm_avellaneda'>Avellaneda</option>
                                     <option value="frm_quilmes">Quilmes</option>
