@@ -304,7 +304,7 @@ export const Solicitar = () => {
                             <span className='text-center'>$ { Number(stateForm.frm_cantidad) + Number(servicio)}</span>
                         </div>
                     </div>
-                    <div className='container'>
+                    <div className=''>
                         <div className='button-solicitar'>
                            <>{ inputLleno && inputTel && inputDireccion && inputAltura && !selecCity ?  <input type='submit' value='SOLICITAR' className="btn btn-success"/>:<input type='submit' value='SOLICITAR' className="btn btn-success" disabled/>}</>
                         </div>
