@@ -1,17 +1,22 @@
 @media only screen and (max-width: 700px) {
 
-    * { 
+    *{ 
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-    
+        box-sizing: content-box;
     }
+
+    body{
+        overflow-x: hidden;
+     }
 
     #logo-icons{
         font-size: 4rem;
         width: 100%;
+        color: aqua;
     }
     .container-section1{
+        box-sizing: border-box;
         padding-top: 4rem;
         padding-bottom: 4rem;
         display: flex;
@@ -32,7 +37,15 @@
     }
 
     .container-title h1{
-        font-size: 24px;
+        font-size: 20px;
         width: 100%;
+        color: white;
+        font-weight: bold;
+        font-family: 'Silkscreen', cursive;
+    }
+
+    .container-title p{
+        font-size: 14px;
+        color: white;
     }
 }

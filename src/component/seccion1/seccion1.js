@@ -12,7 +12,7 @@ export const Seccion1 = () => {
                 </div>
                 <div className='container-title'>
                     <div>
-                        <h1>Ten tu dinero a mano</h1>
+                        <h1>DINERO EN MANO</h1>
                     </div>
                     <div>
                         <p>Solicita y nosotros te llevaremos el dinero a tu casa</p>

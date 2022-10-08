@@ -1,0 +1,38 @@
+@media only screen and (max-width: 700px) {
+    *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+
+    img{
+        width: 30%;
+    }
+    .container-frase span{
+        color: red;
+        font-weight: bold;
+    }
+
+    .container-frase{
+        display: flex;
+        width: 95%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .container-frase-imagen{
+        width: 40%;
+    }
+    
+    .container-frase-imagen img{
+        width: 100%;
+    }
+
+    .container-frase-texto{
+        width: 60%;
+    }
+
+    .container-frase-texto p{
+        width: 100%;
+    }
+}
