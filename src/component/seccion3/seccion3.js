@@ -11,7 +11,7 @@ export const Seccion3 = () =>{
         <div>
             <div className='container-seccion3'>
                 <div className='container-seccion3-titulo'>
-                    <h3>Medios de Pago Aceptado</h3>
+                    <h3>MEDIOS DE PAGO ACEPTADO</h3>
                 </div>
                 <div className='container-logo-seccion3'>
                     <div>
