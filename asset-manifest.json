@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/frontend-moneserv/static/css/main.56c9eb7d.css",
-    "main.js": "/frontend-moneserv/static/js/main.4f145f10.js",
+    "main.css": "/frontend-moneserv/static/css/main.2079e258.css",
+    "main.js": "/frontend-moneserv/static/js/main.47142af1.js",
     "static/js/787.cda612ba.chunk.js": "/frontend-moneserv/static/js/787.cda612ba.chunk.js",
     "static/media/tellevamoslogo.svg": "/frontend-moneserv/static/media/tellevamoslogo.cb23b23a89c7e8f8fc674c47df874647.svg",
     "index.html": "/frontend-moneserv/index.html",
-    "main.56c9eb7d.css.map": "/frontend-moneserv/static/css/main.56c9eb7d.css.map",
-    "main.4f145f10.js.map": "/frontend-moneserv/static/js/main.4f145f10.js.map",
+    "main.2079e258.css.map": "/frontend-moneserv/static/css/main.2079e258.css.map",
+    "main.47142af1.js.map": "/frontend-moneserv/static/js/main.47142af1.js.map",
     "787.cda612ba.chunk.js.map": "/frontend-moneserv/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56c9eb7d.css",
-    "static/js/main.4f145f10.js"
+    "static/css/main.2079e258.css",
+    "static/js/main.47142af1.js"
   ]
 }
