@@ -1,10 +1,21 @@
 @media only screen and (max-width: 700px) {
 
+    *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+
     /*Color del fondo*/
 
     /*Input General*/
     .input-label-container{
         color: #f8f8f8;
+        box-sizing: border-box;
+    }
+
+    .input-label-container-option{
+        box-sizing: border-box;
     }
 
     .input-label-container label{
@@ -17,6 +28,11 @@
         background-color: #fef6e4;
         border: 2px solid #ff8906;
         border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    select{
+        box-sizing: border-box;
     }
 
     .input-label-container-option label{
@@ -47,7 +63,16 @@
     }
 
     .container-total{
-        width: 80%;
+        width: 100%;
+        display: flex;
+    }
+
+    .container-total p, .container-total span{
+        width: 100%;
+    }
+
+    .container-total span{
+        text-align: start;
     }
 
 
@@ -93,4 +118,28 @@
         font-size: 10rem;
         color: green;
     }
+
+    .container-monto-solicitado{
+        display: flex;
+        width: 100%;
+    }
+
+    .monto-solicitado-titulo{
+        width: 50%;
+    }
+
+    .container-costo-servicio{
+        display: flex;
+        width: 100;
+    }
+
+    .costo-servicio{
+        width: 50%;
+    }
+
+    .text-end{
+        width: 50%;
+        margin: auto;
+    }
+
 }

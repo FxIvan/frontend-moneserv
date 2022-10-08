@@ -143,7 +143,7 @@ export const Solicitar = () => {
                     </div>
                 </div>    
                 :
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} >
                     <div>
                         <div>
                             <div className='row container m-auto input-label-container'>
@@ -281,27 +281,27 @@ export const Solicitar = () => {
                     </div>
 
                     <div className='container text-center mt-5 mb-1 container-total-producto'>
-                        <div className='row d-flex col-xs-12'>
-                            <div className='w-50'>
-                                <h3>Monto Solicitado</h3>
+                        <div className='container-monto-solicitado'>
+                            <div className='monto-solicitado-titulo'>
+                                <h3>Monto Solicitado : </h3>
                             </div>
-                            <div className='w-50'>
+                            <div className='w-100'>
                                 <p>$ {stateForm.frm_cantidad}</p>
                             </div>
                         </div>
-                        <div className='row'>
-                            <div className='w-50'>
-                                <h3>Costo del Servicio</h3>
+                        <div className='container-costo-servicio'>
+                            <div className='costo-servicio'>
+                                <h3>Costo del Servicio : </h3>
                             </div>
-                            <div className='w-50'>
+                            <div className='w-100'>
                                 <p>$ {servicio}</p>
                             </div>
                         </div>
                     </div>
-                    <div className='container text-end'>
-                        <div className='row m-auto container-total'>
-                            <p className='w-50 text-center'>Total :</p>
-                            <span className='w-50 text-center'>$ { Number(stateForm.frm_cantidad) + Number(servicio)}</span>
+                    <div className='text-end'>
+                        <div className='container-total'>
+                            <p className=' text-center'>Total :</p>
+                            <span className='text-center'>$ { Number(stateForm.frm_cantidad) + Number(servicio)}</span>
                         </div>
                     </div>
                     <div className='container'>
