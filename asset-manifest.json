@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/frontend-moneserv/static/css/main.2079e258.css",
-    "main.js": "/frontend-moneserv/static/js/main.47142af1.js",
+    "main.js": "/frontend-moneserv/static/js/main.1d6f6ff8.js",
     "static/js/787.cda612ba.chunk.js": "/frontend-moneserv/static/js/787.cda612ba.chunk.js",
     "static/media/tellevamoslogo.svg": "/frontend-moneserv/static/media/tellevamoslogo.cb23b23a89c7e8f8fc674c47df874647.svg",
     "index.html": "/frontend-moneserv/index.html",
     "main.2079e258.css.map": "/frontend-moneserv/static/css/main.2079e258.css.map",
-    "main.47142af1.js.map": "/frontend-moneserv/static/js/main.47142af1.js.map",
+    "main.1d6f6ff8.js.map": "/frontend-moneserv/static/js/main.1d6f6ff8.js.map",
     "787.cda612ba.chunk.js.map": "/frontend-moneserv/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2079e258.css",
-    "static/js/main.47142af1.js"
+    "static/js/main.1d6f6ff8.js"
   ]
 }
