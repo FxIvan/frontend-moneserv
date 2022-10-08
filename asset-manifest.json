@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/frontend-moneserv/static/css/main.bdd2e18b.css",
-    "main.js": "/frontend-moneserv/static/js/main.84dd0e4e.js",
+    "main.css": "/frontend-moneserv/static/css/main.6c7a11e9.css",
+    "main.js": "/frontend-moneserv/static/js/main.cf3d9de7.js",
     "static/js/787.cda612ba.chunk.js": "/frontend-moneserv/static/js/787.cda612ba.chunk.js",
+    "static/media/uala.jpg": "/frontend-moneserv/static/media/uala.b94d671502231658bbf0.jpg",
     "static/media/tellevamoslogo.svg": "/frontend-moneserv/static/media/tellevamoslogo.cb23b23a89c7e8f8fc674c47df874647.svg",
+    "static/media/lemoncash.png": "/frontend-moneserv/static/media/lemoncash.92ff2b5152396dadd96f.png",
     "index.html": "/frontend-moneserv/index.html",
-    "main.bdd2e18b.css.map": "/frontend-moneserv/static/css/main.bdd2e18b.css.map",
-    "main.84dd0e4e.js.map": "/frontend-moneserv/static/js/main.84dd0e4e.js.map",
+    "main.6c7a11e9.css.map": "/frontend-moneserv/static/css/main.6c7a11e9.css.map",
+    "main.cf3d9de7.js.map": "/frontend-moneserv/static/js/main.cf3d9de7.js.map",
     "787.cda612ba.chunk.js.map": "/frontend-moneserv/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdd2e18b.css",
-    "static/js/main.84dd0e4e.js"
+    "static/css/main.6c7a11e9.css",
+    "static/js/main.cf3d9de7.js"
   ]
 }
