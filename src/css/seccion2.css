@@ -9,7 +9,7 @@
         width: 30%;
     }
     .container-frase span{
-        color: red;
+        color: rgb(109, 231, 115);
         font-weight: bold;
     }
 
@@ -34,5 +34,26 @@
 
     .container-frase-texto p{
         width: 100%;
+    }
+
+    .container-ciudades{
+        margin-top: 2rem;
+        box-sizing: border-box;
+    }
+
+    .container-lista-ciudades{
+        display: flex;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .lista-ciudades-1 , .lista-ciudades-2{
+        width: 50%;
+    }
+
+    .container-lista-ciudades ul li{
+        list-style: none;
+        color: white;
+        text-align: initial;
     }
 }
