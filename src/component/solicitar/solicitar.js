@@ -275,6 +275,7 @@ export const Solicitar = () => {
                                     name='frm_cantidad'
                                     max='5000'
                                     />
+                                <p className='m-0'>cantidad maxima: 5.000$</p>
                             </div>
                         </div>
                     </div>
