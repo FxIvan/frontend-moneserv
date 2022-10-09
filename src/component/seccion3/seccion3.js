@@ -1,7 +1,5 @@
 import React from 'react'
-import lemoncash from './img/lemoncash.png'
-import mercadopago from './img/mercadopago.png'
-import uala from './img/uala.jpg'
+import {RiNumber1,RiNumber2,RiNumber3} from 'react-icons/ri'
 
 import '../../css/seccion3.css'
 
@@ -22,6 +20,18 @@ export const Seccion3 = () =>{
                     </div>
                     <div>
                         <h4>LEMON <br/> CASH</h4> 
+                    </div>
+                </div>
+            </div>
+
+            <div className='container-list-beneficio'>
+                <div>
+                    <div>
+                        <ul>
+                            <li><RiNumber1 className='number-list'/><p>SOLICITA EL DINERO</p></li>
+                            <li><RiNumber2 className='number-list'/><p>TE CONTACTAMOS</p></li>
+                            <li><RiNumber3 className='number-list'/><p>TE ENVIAMOS</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
