@@ -13,13 +13,13 @@ export const Seccion3 = () =>{
                 </div>
                 <div className='container-logo-seccion3'>
                     <div>
-                       <h4>MERCADO <br/> PAGO</h4>
+                       <h4 className='mp'>MERCADO <br/> PAGO</h4>
                     </div>
                     <div>
-                        <h4>UALA</h4>
+                        <h4 className='uala'>UALA</h4>
                     </div>
                     <div>
-                        <h4>LEMON <br/> CASH</h4> 
+                        <h4 className='lemon'>LEMON <br/> CASH</h4> 
                     </div>
                 </div>
             </div>

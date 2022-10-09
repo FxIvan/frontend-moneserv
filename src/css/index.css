@@ -5,6 +5,11 @@
         box-sizing: content-box;
     }
 
+    h3{
+        font-family: 'Chakra Petch', sans-serif;
+        font-weight: bolder;
+    }
+
     .header-link-fire{
         font-size: 24px;
         color: aqua;
