@@ -1,0 +1,28 @@
+@media only screen and (max-width: 700px) {
+
+    footer{
+        background-color: black;
+    }
+
+    .container-footer{
+        padding: 1rem;
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+    .footer-logo{
+        font-size: 24px;
+        color: aqua;
+    }
+
+    .container-develeper{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+    .container-develeper p{
+        font-size: 11px;
+        margin-bottom: 0.3rem;
+    }
+}
