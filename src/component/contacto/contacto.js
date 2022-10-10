@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import '../../css/contacto.css'
 import { Footer } from '../footer/footer'
@@ -19,9 +20,9 @@ export const Contacto = () =>{
         })
     }
     
-    const handleSubmit = (e) =>{
+    const handleSubmit = async(e) =>{
         e.preventDefault()
-        console.log(formConsulta)
+        await axios.post('https://devalmendra.online/contacto/data' , formConsulta)
     }
     return(
         <div>
