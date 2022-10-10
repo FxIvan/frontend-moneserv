@@ -36,4 +36,48 @@
         background-color: green;
         border: 2px solid black;
     }
+
+    .container-consultas form input, .container-consultas form textarea{
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    .container-contacto-ws{
+        margin-top: 3rem;
+    }
+
+    .container-contacto-ws h4{
+        color: white;
+        text-align: center;
+    }
+
+    .container-contacto-ws ul li{
+        list-style: none;
+        color: white;
+        display: flex;
+    }
+
+    .container-contacto-ws ul li a{
+        font-style: none;
+        text-decoration: none;
+        color: green;
+        font-weight: bold;
+        padding-left: 0.4rem;
+    }
+
+    .container-contacto-ws ul li p{
+        color: rgba(213, 223, 73, 0.842);
+        font-weight: bold;
+        padding-left: 0.4rem;
+    }
+
+    .container-contacto-ws  .contacto-horario-atencion{
+        margin-top: 2rem 0 2rem 0;
+    }
+
+    .contacto-horario-atencion p{
+        padding-left: 2rem;
+        font-weight: bold;
+    }   
 }

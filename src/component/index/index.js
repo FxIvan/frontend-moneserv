@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { Header } from './header'
+import React from 'react'
 import '../../css/index.css'
 import { Seccion1 } from '../seccion1/seccion1'
 import { Seccion2 } from '../seccion2/seccion2'
@@ -18,9 +17,6 @@ export const Index = () =>{
             <section>
                 <Seccion3/>
             </section>
-            <footer>
-                <Footer/>
-            </footer>
         </div>
     )
 }

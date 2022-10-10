@@ -5,6 +5,8 @@ import { ChargingData } from '../component/chg_date'
 import { Solicitar } from '../component/solicitar/solicitar'
 import { Header } from '../component/index/header'
 import { Contacto } from '../component/contacto/contacto'
+import { Footer } from '../component/footer/footer'
+import '../css/footer.css'
 
 
 export const Router = () =>{
@@ -17,6 +19,9 @@ export const Router = () =>{
             <Route path='/form/solicitud' element={<Solicitar/>} />
             <Route path='/contacto' element={<Contacto/>}/>
         </Routes>
+        <footer>
+            <Footer/>
+        </footer>
     </HashRouter>
     )
 }

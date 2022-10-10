@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../../css/contacto.css'
+import { Footer } from '../footer/footer'
 
 export const Contacto = () =>{
 
@@ -43,9 +44,19 @@ export const Contacto = () =>{
                 </form>
 
                 <div>
-                    <div>
+                    <div className='container-contacto-ws'>
                         <div>
-                            <p>Whatsapp : <a href=''></a></p>
+                            <h4>Otros medios de contacto</h4>
+                            <ul>
+                                <li>Whatsapp : <a href=' https://wa.me/1136887781' target='_blank'>1136887781</a></li>
+                                <li>Mail : <p> dineroenmanoit@gmail.com</p></li>
+                            </ul>
+                        </div>
+                        <div className='contacto-horario-atencion'>
+                            <h4>Horario de Atencion</h4>
+                            <p>Lunes a Viernes de 8 a 17hs</p>
+                            <p>Sabados y Domingo de 8 a 17hs</p>
+                            <p>Feriados 8 a 17hs</p>
                         </div>
                     </div>
                 </div>
