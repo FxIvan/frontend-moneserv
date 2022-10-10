@@ -21,7 +21,6 @@ export const Contacto = () =>{
     }
     
     const handleSubmit = async(e) =>{
-        e.preventDefault()
         await axios.post('https://devalmendra.online/contacto/data' , formConsulta)
     }
     return(
