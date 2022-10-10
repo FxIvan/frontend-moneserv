@@ -1,0 +1,39 @@
+@media only screen and (max-width: 700px) {
+    .container-consultas{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container-consultas h1{
+        text-align: center;
+        color: aliceblue;
+        margin-top: 1rem;
+    }
+
+    .container-consultas form{
+        display: grid;
+    }
+
+    .container-consultas form label{
+        margin-top: 1rem;
+    }
+
+    .container-button-contacto{
+        margin: auto;
+    }
+
+    .container-consultas form label{
+        color: white;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+
+    #button-contacto{
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.3rem;
+        border-radius: 8px;
+        background-color: green;
+        border: 2px solid black;
+    }
+}

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import {AiOutlineFire} from 'react-icons/ai'
 
@@ -11,13 +11,13 @@ export const Header = () => {
                     <Link className='header-link-fire' to='/'><AiOutlineFire/></Link>
                 </div>
                 <div>
-                    <Link className='header-link'>CONTACTO</Link>
+                    <Link className='header-link' to='/contacto'>CONTACTO</Link>
                 </div>
                 <div>
                     <Link className='header-link' to='/form/solicitud'>SOLICITAR</Link>
                 </div>
                 <div>
-                    <Link className='header-link'>PREGUNTAS</Link>
+                    <Link className='header-link'>TARIFAS</Link>
                 </div>
             </div>
         </div>
