@@ -37,7 +37,7 @@ export const Contacto = () =>{
                     <label>Correo</label>
                     <input type="email" name='frm_email' onChange={handleChange} placeholder="Tu Correo"/>
                     <label>Consulta</label>
-                    <textarea type='text' name='frm_consulta' onChange={handleChange}/>
+                    <textarea type='text' name='frm_consulta' onChange={handleChange} height='300px'/>
                     <div className='container-button-contacto'>
                         <input type='submit' value='Enviar' id='button-contacto'/>
                     </div>

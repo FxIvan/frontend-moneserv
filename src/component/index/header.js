@@ -17,7 +17,7 @@ export const Header = () => {
                     <Link className='header-link' to='/form/solicitud'>SOLICITAR</Link>
                 </div>
                 <div>
-                    <Link className='header-link'>TARIFAS</Link>
+                    <Link className='header-link' to='/tarifa'>TARIFAS</Link>
                 </div>
             </div>
         </div>

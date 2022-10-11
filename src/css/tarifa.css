@@ -1,0 +1,53 @@
+@media only screen and (max-width: 700px) {
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-target-price{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container-tarjeta-1-2{
+        display: flex;
+    }
+    .container-tarjeta-1, .container-tarjeta-2{
+        border: 2px solid black;
+        text-align: initial;
+        width: 40%;
+        margin: auto;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        min-height: 23vh;
+        margin-top: 2rem;
+    }
+
+    .container-tarjeta-3-4{
+        display: flex;
+    }
+
+    .container-tarjeta-3, .container-tarjeta-4{
+        border: 2px solid black;
+        text-align: initial;
+        width: 40%;
+        margin: auto;
+        padding: 0.3rem;
+        border-radius: 1rem;
+        min-height: 23vh;
+        margin-top: 2rem;
+    }
+
+    .container-tarjeta-1 h3, .container-tarjeta-2 h3 , .container-tarjeta-3 h3 , .container-tarjeta-4 h3{
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .container-tarjeta-1 ul, .container-tarjeta-2 ul , .container-tarjeta-3 ul , .container-tarjeta-4 ul{
+        margin: auto;
+        padding: 0 0 0 0.3rem;
+    }
+    
+}

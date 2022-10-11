@@ -119,7 +119,7 @@ export const Solicitar = () => {
 
     return (
         <div>
-            <div>
+            <div className='mb-5'>
                 <div>{statusHTTP ?  
                 <div>
                     <div>
