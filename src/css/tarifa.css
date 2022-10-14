@@ -6,6 +6,10 @@
         margin: 0;
     }
 
+    .container-tarifa-mobile h2{
+        text-align: center;
+    }
+
     .container-target-price{
         width: 90%;
         margin: auto;

@@ -5,7 +5,7 @@ export const Tarifa = () => {
     return (
         <div>
             <div>
-                <div>
+                <div className='container-tarifa-mobile'>
                     <h2>Tarifas</h2>
                 </div>
                 <div className='container-target-price'>
