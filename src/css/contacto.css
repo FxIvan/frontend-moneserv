@@ -61,6 +61,8 @@
         list-style: none;
         color: white;
         display: flex;
+        text-overflow: clip;
+        overflow: hidden;
     }
 
     .container-contacto-ws ul li a{
@@ -75,6 +77,7 @@
         color: rgba(213, 223, 73, 0.842);
         font-weight: bold;
         padding-left: 0.4rem;
+        text-overflow: visible;
     }
 
     .container-contacto-ws  .contacto-horario-atencion{

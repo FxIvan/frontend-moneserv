@@ -23,6 +23,7 @@
         border-radius: 1rem;
         min-height: 23vh;
         margin-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .container-tarjeta-3-4{
@@ -38,6 +39,7 @@
         border-radius: 1rem;
         min-height: 23vh;
         margin-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .container-tarjeta-1 h3, .container-tarjeta-2 h3 , .container-tarjeta-3 h3 , .container-tarjeta-4 h3{
@@ -49,5 +51,26 @@
         margin: auto;
         padding: 0 0 0 0.3rem;
     }
+    .container-target-price ul li{
+        color: white;
+        padding: 0 0 1rem 0.3rem;
+        text-overflow: clip;
+        overflow: hidden;
+    }
+    
+    .lista-tarifa-ul{
+        height: 30vh;
+    }
+
+    .lista-tarifa-li{
+        height: 9rem;
+        padding: 1rem;
+    }
+
+    .lista-tarifa-precio{
+        height: 4rem;
+        box-sizing: border-box;
+    }
+    
     
 }
