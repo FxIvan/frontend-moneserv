@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:alpine AS build
 
 WORKDIR /app
 
@@ -10,6 +10,10 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 3000
+FROM nginx:alpine AS prod-stage
 
-CMD ["npm" , "start"]
+COPY --from=build /app/build /usr/nginx/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx","-p","deamon off;"]
