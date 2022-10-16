@@ -12,8 +12,7 @@ RUN npm run build
 
 FROM nginx:alpine AS prod-stage
 
-COPY --from=build /app/build /usr/nginx/share/nginx/html
+COPY --from=build /app/build /var/www/html
 
-EXPOSE 80
-
-CMD ["nginx","-p","deamon off;"]
+EXPOSE 3000
+CMD ["npm","start"]
