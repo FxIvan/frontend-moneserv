@@ -12,6 +12,7 @@
     .input-label-container{
         color: #f8f8f8;
         box-sizing: border-box;
+        
     }
 
     .input-label-container-option{
@@ -60,6 +61,7 @@
     .button-solicitar{
         text-align: center;
         margin: 10px 0 2rem 0;
+        margin-bottom: 2rem;
     }
 
     .container-total{

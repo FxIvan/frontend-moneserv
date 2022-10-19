@@ -2,6 +2,7 @@
 
     footer{
         background-color: black;
+        padding: 1rem;
     }
 
     .container-footer{
@@ -16,13 +17,13 @@
     }
 
     .container-develeper{
-        width: 70%;
+        width: 90%;
         margin: auto;
         margin-bottom: 0;
     }
 
     .container-develeper p{
-        font-size: 11px;
+        font-size: 12px;
         margin-bottom: 0.3rem;
     }
 }

@@ -14,9 +14,8 @@
         margin-bottom: 40px;
       }
       footer {
-        position: absolute;
-        bottom: 0;
         width: 100%;
+        bottom: auto;
       }
 
     h3{
