@@ -5,6 +5,9 @@
         padding: 0;
         margin: 0;
     }
+    body {
+        margin: auto;
+      }
 
     .container-tarifa-mobile h2{
         text-align: center;

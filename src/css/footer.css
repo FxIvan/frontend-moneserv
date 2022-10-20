@@ -4,6 +4,9 @@
         background-color: black;
         padding: 1rem;
     }
+    body {
+        margin: auto;
+      }
 
     .container-footer{
         /*padding: 1rem;*/
@@ -20,10 +23,11 @@
         width: 90%;
         margin: auto;
         margin-bottom: 0;
+        text-align: center;
     }
 
     .container-develeper p{
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 0.3rem;
     }
 }
